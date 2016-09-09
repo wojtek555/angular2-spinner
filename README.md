@@ -1,6 +1,8 @@
 # Angular2 Spinner
 
-Simple preloading indicator
+Simple preloading indicator.
+
+![preview](preview.png)
 
 ## Usage
 
