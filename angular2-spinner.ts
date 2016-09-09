@@ -4,7 +4,26 @@ import { Component, Input, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'spinner',
   template: '',
-  styleUrls: ['n2-spinner.css'],
+  style: [`
+    @keyframes spin {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+
+    :host {
+      position:relative;
+      box-sizing: border-box;
+      display:inline-block;
+      padding:0px;
+      border-radius:100%;
+      border-style:solid;
+      animation: spin 0.8s linear infinite;
+    }
+
+    :host .margins {
+        margin: 0px 10px;
+    }
+  `],
   host: {
     '[style.width]':'size + "px"',
     '[style.height]':'size + "px"',
