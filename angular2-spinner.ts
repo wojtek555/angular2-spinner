@@ -4,7 +4,7 @@ import { Component, Input, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'spinner',
   template: '',
-  style: [`
+  styles: [`
     @keyframes spin {
       from {transform: rotate(0deg);}
       to {transform: rotate(360deg);}
