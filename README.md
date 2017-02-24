@@ -6,16 +6,13 @@ Simple preloading indicator.
 
 ## Instalation
 
-1. Add `'angular2-spinner/**/*.+(js|css|js.map)'` angular-cli-build.js
-2. Add the following in system.config.ts
- - Add in barrels `'angular2-spinner',`
- - Add in map `'angular2-spinner' : 'vendor/angular2-spinner'`
- - Add in packages
- ```
- 'angular2-spinner' : {
-    main: 'angular2-spinner.js',
-    defaultExtension: 'js'
-  }
+```
+import { SpinnerModule } from 'angular2-spinner';
+....
+imports: [
+    SpinnerModule,
+],
+...
  ```
 
 ## Usage

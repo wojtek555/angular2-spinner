@@ -7,9 +7,11 @@
         "experimentalDecorators": true,
         "sourceMap": true,
         "declaration": true,
-        "moduleResolution":"node"
+        "moduleResolution": "node",
+        "outDir": "build/"
     },
     "files": [
+        "index.ts",
         "angular2-spinner.ts",
         "typings/browser.d.ts",
         "custom.d.ts"

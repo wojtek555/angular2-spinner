@@ -1,37 +1,35 @@
 {
-  "name": "angular2-spinner",
-  "version": "1.0.0",
-  "description": "Angular2 Spinner Indicator",
-  "main": "angular2-spinner.js",
-  "scripts": {
-    "start": "tsc --watch",
-    "prepublish": "typings install && tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:mvpninjas/angular2-spinner.git"
-  },
-  "keywords": [
-    "loading",
-    "angular2",
-    "preloading"
-  ],
-  "peerDependencies": {
-    "@angular/core": "^2.0.0-rc.6"
-  },
-  "typings": "./angular2-spinner.d.ts",
-  "homepage": "https://mvpninjas.com",
-  "devDependencies": {
-    "@angular/core": "^2.0.0-rc.6",
-    "awesome-typescript-loader": "^0.17.0",
-    "@angular/platform-browser": "^2.0.0-rc.6",
-    "core-js": "^2.3.0",
-    "es6-shim": "^0.35.0",
-    "reflect-metadata": "0.1.2",
-    "typescript": "^1.8.10",
-    "typings": "^0.7.12",
-    "zone.js": "~0.6.12"
-  },
-  "author": "mvpninjas.com",
-  "license": "ISC"
+    "name": "angular2-spinner",
+    "version": "1.0.1",
+    "description": "Angular2 Spinner Indicator",
+    "main": "./build/index.js",
+    "scripts": {
+        "start": "rm -rf build/ && mkdir build/ && cp angular2-spinner.css build/ && tsc --watch",
+        "prepublish": "typings install && tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:mvpninjas/angular2-spinner.git"
+    },
+    "keywords": [
+        "loading",
+        "angular2",
+        "preloading"
+    ],
+    "peerDependencies": {
+        "@angular/core": "^2.4.0"
+    },
+    "typings": "./angular2-spinner.d.ts",
+    "homepage": "https://mvpninjas.com",
+    "devDependencies": {
+        "awesome-typescript-loader": "^0.17.0",
+        "core-js": "^2.3.0",
+        "es6-shim": "^0.35.0",
+        "reflect-metadata": "0.1.2",
+        "typescript": "^1.8.10",
+        "typings": "^0.7.12",
+        "zone.js": "~0.6.12"
+    },
+    "author": "mvpninjas.com",
+    "license": "ISC"
 }
