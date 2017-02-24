@@ -1,9 +1,28 @@
-import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA, Component, HostBinding, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'spinner',
   template: '',
-  styles: [require('./angular2-spinner.css')]
+  styles: [`
+    @keyframes spin {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+
+    :host {
+      position:relative;
+      box-sizing: border-box;
+      display:inline-block;
+      padding:0px;
+      border-radius:100%;
+      border-style:solid;
+      animation: spin 0.8s linear infinite;
+    }
+
+    :host .margins {
+        margin: 0px 10px;
+    }
+  `]
 })
 export class SpinnerComponent implements OnInit {
 
@@ -42,3 +61,14 @@ export class SpinnerComponent implements OnInit {
     } : null;
   }
 }
+
+@NgModule({
+    declarations: [
+        SpinnerComponent
+    ],
+    exports: [
+        SpinnerComponent,
+    ],
+    schemas: [ NO_ERRORS_SCHEMA ],
+})
+export class SpinnerModule {}

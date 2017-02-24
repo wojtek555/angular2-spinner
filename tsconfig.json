@@ -1,19 +1,22 @@
 {
     "compilerOptions": {
-        "noImplicitAny": true,
+        "target": "es5",
         "module": "commonjs",
-        "target": "ES5",
+        "moduleResolution": "node",
+        "sourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "sourceMap": true,
-        "declaration": true,
-        "moduleResolution": "node",
-        "outDir": "build/"
+        "lib": ["es2015", "dom", "es6"],
+        "noImplicitAny": true,
+        "suppressImplicitAnyIndexErrors": true
     },
     "files": [
-        "index.ts",
         "angular2-spinner.ts",
         "typings/browser.d.ts",
         "custom.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings"
     ]
 }

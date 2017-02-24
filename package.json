@@ -2,9 +2,11 @@
     "name": "angular2-spinner",
     "version": "1.0.1",
     "description": "Angular2 Spinner Indicator",
-    "main": "./build/index.js",
+    "main": "./angular2-spinner.js",
+    "module": "./angular2-spinner.js",
+    "typings": "ng2-datepicker.d.ts",
     "scripts": {
-        "start": "rm -rf build/ && mkdir build/ && cp angular2-spinner.css build/ && tsc --watch",
+        "start": "tsc --watch",
         "prepublish": "typings install && tsc"
     },
     "repository": {
@@ -16,20 +18,12 @@
         "angular2",
         "preloading"
     ],
-    "peerDependencies": {
-        "@angular/core": "^2.4.0"
-    },
-    "typings": "./angular2-spinner.d.ts",
-    "homepage": "https://mvpninjas.com",
     "devDependencies": {
-        "awesome-typescript-loader": "^0.17.0",
-        "core-js": "^2.3.0",
-        "es6-shim": "^0.35.0",
-        "reflect-metadata": "0.1.2",
-        "typescript": "^1.8.10",
-        "typings": "^0.7.12",
-        "zone.js": "~0.6.12"
+        "@angular/core": "^2.4.0",
+        "rxjs": "^5.0.1",
+        "zone.js": "^0.7.2"
     },
+    "homepage": "https://mvpninjas.com",
     "author": "mvpninjas.com",
     "license": "ISC"
 }
