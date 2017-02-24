@@ -17,6 +17,10 @@ imports: [
 
 ## Usage
 
-```
-<spinner [size]="20" [tickness]="1" [color]="#ff66ff"></spinner>
-```
+**Import:**
+
+`import { SpinnerComponent } from "angular2-spinner";`
+
+**Add component:**
+
+`<spinner [size]="20" [tickness]="1" [color]="#ff66ff"></spinner>`
