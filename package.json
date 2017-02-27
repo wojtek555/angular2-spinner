@@ -1,10 +1,10 @@
 {
     "name": "angular2-spinner",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Angular2 Spinner Indicator",
-    "main": "./angular2-spinner.js",
-    "module": "./angular2-spinner.js",
-    "typings": "ng2-datepicker.d.ts",
+    "main": "./dist/angular2-spinner.js",
+    "module": "./dist/angular2-spinner.js",
+    "typings": "./dist/ng2-datepicker.d.ts",
     "scripts": {
         "start": "tsc --watch",
         "prepublish": "typings install && tsc"
