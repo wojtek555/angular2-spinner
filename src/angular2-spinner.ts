@@ -1,4 +1,4 @@
-import { NgModule, NO_ERRORS_SCHEMA, Component, HostBinding, Input, OnInit } from '@angular/core';
+import { Component, HostBinding, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'spinner',
@@ -61,14 +61,3 @@ export class SpinnerComponent implements OnInit {
     } : null;
   }
 }
-
-@NgModule({
-    declarations: [
-        SpinnerComponent
-    ],
-    exports: [
-        SpinnerComponent,
-    ],
-    schemas: [ NO_ERRORS_SCHEMA ],
-})
-export class SpinnerModule {}
