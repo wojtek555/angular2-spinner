@@ -17,12 +17,12 @@ imports: [
 
 ## Usage
 
-```
+```html
 <spinner [size]="20" [tickness]="1" [color]="#ff66ff"></spinner>
 ```
 
 
-```
+```html
 <button [disabled]="working" md-icon-button (click)="save()">
     <md-icon *ngIf="!working">save</md-icon>
     <spinner *ngIf="working" [tickness]="1" [size]="20"></spinner>
